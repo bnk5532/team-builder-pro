@@ -30,6 +30,18 @@ inquirer.prompt([
         type: "input",
         message: "Office number?",
         name: "Office #",
+    },
+    {
+        //engineer only
+        type: "input",
+        message: "GitHub?",
+        name: "GitHub",
+    },
+    {
+        //intern only
+        type: "input",
+        message: "School?",
+        name: "School name",
     }
 ])
 //writes or overwrites inquirer answers to new readme file. 
