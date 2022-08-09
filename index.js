@@ -4,39 +4,7 @@ const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 const template = require("./lib/template")
 const employees = []
-// const temporary = [
-//     { name: '', id: '', email: 'fdfdfd', office: 'dfd' },
-//     { name: 'fdfd', id: 'dfd', email: 'df', github: "fgdfd"}
-//   ]
 const fs = require("fs");
-// const generateMarkdown = require("./utils/generateMarkdown");
-// const engineerTemp = temporary.filter((engineer)=>engineer.hasOwnProperty("github")).map((engineer)=>writeEngineer(engineer))
-// const internTemp = employees
-//     .filter((intern) => intern.hasOwnProperty("school"))
-//     .map((intern) => writeIntern(intern));
-
-// console.log(engineerTemp.join(""))
-// console.log(internTemp.join(""))
-
-// function writeEngineer({name, id, email, github}) {
-//     return `<div>
-//     <h1>${name}</h1>
-//     <h2>${id}</h2>
-//     <h3>${email}</h3>
-//     <h4>${github}</h4>
-// </div>`
-
-// }
-// function writeIntern({name, id, email, school}) {
-//     return `<div>
-//     <h1>${name}</h1>
-//     <h2>${id}</h2>
-//     <h3>${email}</h3>
-//     <h4>${school}</h4>
-// </div>`
-
-// }
-//questions
 
 (function managerPrompt() {
     inquirer.prompt([
