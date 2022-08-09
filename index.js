@@ -134,7 +134,17 @@ function internPrompt() {
         message: "School?",
         name: "school",
         }   
-    ]) .then(()=> {})
+    ]) .then(({name, id, email, school})=> {
+        const newIntern = new Intern (
+            name, 
+            id,
+            email,
+            school
+        )
+        employees.push(newIntern)
+        console.log(employees)
+        roleList()
+    })
 }
 
 function writeFile(){
@@ -142,47 +152,3 @@ function writeFile(){
        err ? console.log(err) : console.log("Success!"));
     
 }
-
-
-
-// inquirer.prompt([
-//     {
-//         type: "input",
-//         name: "name",
-//         message: "Employee name?",
-//     },
-//     {
-//         type: "input",
-//         message: "Employee ID?",
-//         name: "id",
-//     },
-//     {
-//         type: "input",
-//         message: "Email?",
-//         name: "email",
-//     },
-//     {
-//         type: "list",
-//         message: "Job title?",
-//         name: "Role",
-//         choices: ["Engineer", "Intern", "Done"],
-//     },
-//     {
-//         //manager only
-//         type: "input",
-//         message: "Office number?",
-//         name: "office",
-//     },
-    
-//     {
-//         //intern only
-//         type: "input",
-//         message: "School?",
-//         name: "school",
-//     }
-// ])
-//writes or overwrites inquirer answers to new readme file. 
-// .then((answers) => {
-//        fs.writeFile('README.md', generateMarkdown(answers), err => 
-//        err ? console.log(err) : console.log("Success!"));
-// });
