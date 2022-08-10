@@ -5,7 +5,7 @@ const Intern = require("./lib/Intern")
 const template = require("./lib/template")
 const employees = []
 const fs = require("fs");
-
+//manager first to start inquirer prompts
 (function managerPrompt() {
     inquirer.prompt([
         {
@@ -41,7 +41,7 @@ const fs = require("fs");
         roleList()
     })
 })()
-
+//calls after manager prompt and gives selection of different employee roles.
 function roleList() 
     {
         inquirer.prompt ([
@@ -56,7 +56,7 @@ function roleList()
         })
     }
  
-
+//calls upon selection of engineer in the roleList
 function engineerPrompt() {
     inquirer.prompt([
         {
@@ -90,11 +90,9 @@ function engineerPrompt() {
         employees.push(newEngineer)
         console.log(employees)
         roleList()
-    })
-    
-    
+    })  
 }
-
+//calls upon selection of intern in the roleList
 function internPrompt() {
     inquirer.prompt([
         {
@@ -130,7 +128,7 @@ function internPrompt() {
         roleList()
     })
 }
-
+//executes file creation upon selection of done from roleList.
 function writeFile(){
     fs.writeFile('team.html', template(employees), err => 
        err ? console.log(err) : console.log("Success!"));
