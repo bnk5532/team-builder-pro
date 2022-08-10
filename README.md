@@ -8,7 +8,7 @@ A command line application to generate professional employee cards using NPM Inq
 
 ## Video Demo
 
-[Click here for video demo!](#)
+[Click here for video demo!](https://watch.screencastify.com/v/p8o9X9xPCP1cHTCmbn9W)
 
 ## Contributors
 Brian King
