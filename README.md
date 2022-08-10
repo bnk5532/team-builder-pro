@@ -9,7 +9,7 @@ A command line application to generate professional employee cards using NPM Inq
 
 ## Dependencies
 * Inquirer
-* NPM
+* Jest
 
 ## Video Demo
 
