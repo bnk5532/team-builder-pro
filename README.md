@@ -5,6 +5,11 @@ A command line application to generate professional employee cards using NPM Inq
 
 ## Languages
 * JavaScript
+* HTML
+
+## Dependencies
+* Inquirer
+* NPM
 
 ## Video Demo
 
