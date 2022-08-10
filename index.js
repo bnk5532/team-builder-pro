@@ -27,14 +27,14 @@ const fs = require("fs");
             //manager only
             type: "input",
             message: "Office number?",
-            name: "office",
+            name: "officeNumber",
         }
-    ]) .then(({name, id, email, office})=> {
+    ]) .then(({name, id, email, officeNumber})=> {
         const newManager = new Manager (
             name, 
             id, 
             email, 
-            office
+            officeNumber
         )
         employees.push(newManager)
         console.log(employees)
